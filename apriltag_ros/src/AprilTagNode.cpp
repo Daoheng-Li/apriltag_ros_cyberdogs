@@ -239,6 +239,7 @@ void AprilTagNode::onCamera(
   pub_detections->publish(tag_detection_array);
   apriltag_detections_destroy(detections);
 }
+
 void AprilTagNode::addObjectPoints(
   double s, cv::Matx44d T_oi, std::vector<cv::Point3d> & objectPoints) const
 {
